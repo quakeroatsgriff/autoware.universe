@@ -38,6 +38,7 @@
   <exec_depend>autoware_radar_object_clustering</exec_depend>
   <exec_depend>autoware_radar_object_tracker</exec_depend>
   <exec_depend>autoware_raindrop_cluster_filter</exec_depend>
+  <exec_depend>autoware_road_segmentation</exec_depend>
   <exec_depend>autoware_shape_estimation</exec_depend>
   <exec_depend>autoware_tracking_object_merger</exec_depend>
   <exec_depend>autoware_traffic_light_arbiter</exec_depend>

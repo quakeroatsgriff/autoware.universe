@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.14)
 project(autoware_traffic_light_fine_detector)
-
+#
+set(CMAKE_PREFIX_PATH /autoware/libtorch)
+find_package(Torch REQUIRED)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
+#
 find_package(autoware_cmake REQUIRED)
 autoware_package()
 
@@ -91,6 +95,7 @@ if(TRT_AVAIL AND CUDA_AVAIL AND CUDNN_AVAIL)
     ${CUBLAS_LIBRARIES}
     ${CUDNN_LIBRARY}
     ${OpenCV_LIB}
+    ${TORCH_LIBRARIES}
     stdc++fs
   )
 

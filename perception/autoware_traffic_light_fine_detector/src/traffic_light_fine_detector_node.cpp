@@ -27,6 +27,7 @@ namespace fs = ::std::experimental::filesystem;
 #include <string>
 #include <utility>
 #include <vector>
+#include <torch/script.h>
 
 namespace
 {
